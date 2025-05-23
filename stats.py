@@ -11,3 +11,6 @@ def get_character_count(book):
     else:
       char_dict[char_lower] = 1
   return char_dict
+
+def sort_dict_desc(book_dict):
+  return dict(sorted(book_dict.items(), key=lambda x: x[1], reverse=True))
